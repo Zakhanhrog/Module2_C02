@@ -6,6 +6,7 @@ public class Circle {
 
     public Circle() {
     }
+
     public Circle(String color, double radius) {
         this.color = color;
         this.radius = radius;
@@ -33,9 +34,8 @@ public class Circle {
 
     @Override
     public String toString() {
-        return "Circle: " +
-                "color='" + color + '\'' +
-                ", radius=" + radius + "\n" +
-                "area: " + getArea();
+        return "color='" + color + '\'' +
+                ", radius=" + radius + " "
+                + "area=" + getArea();
     }
 }
