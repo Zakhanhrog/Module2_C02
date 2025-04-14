@@ -16,7 +16,7 @@ public class ProgrammingBook extends Book {
     public void setLanguage(String language) { this.language = language; }
     public void setFramework(String framework) { this.framework = framework; }
 
-    // Method Overriding ("Nạp chồng" concept applied via overriding)
+
     @Override
     public double getPrice() {
         return super.getPrice() * 0.95; // 5% discount

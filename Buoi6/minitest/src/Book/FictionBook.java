@@ -12,7 +12,7 @@ public class FictionBook extends Book{
 
     public void setCategory(String category) { this.category = category; }
 
-    // Method Overriding ("Nạp chồng" concept applied via overriding)
+
     @Override
     public double getPrice() {
         return super.getPrice() * 0.93; // 7% discount
