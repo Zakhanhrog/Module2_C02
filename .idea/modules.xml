@@ -3,15 +3,18 @@
   <component name="ProjectModuleManager">
     <modules>
       <module fileurl="file://$PROJECT_DIR$/Buoi6/Bai1/Bai1.iml" filepath="$PROJECT_DIR$/Buoi6/Bai1/Bai1.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Buoi7/Bai1_7/Bai1_7.iml" filepath="$PROJECT_DIR$/Buoi7/Bai1_7/Bai1_7.iml" />
       <module fileurl="file://$PROJECT_DIR$/Buoi6/Bai2/Bai2.iml" filepath="$PROJECT_DIR$/Buoi6/Bai2/Bai2.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Buoi7/Bai2_7/Bai2_7.iml" filepath="$PROJECT_DIR$/Buoi7/Bai2_7/Bai2_7.iml" />
       <module fileurl="file://$PROJECT_DIR$/Buoi6/Bai3/Bai3.iml" filepath="$PROJECT_DIR$/Buoi6/Bai3/Bai3.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Buoi7/Bai3_7/Bai3_7.iml" filepath="$PROJECT_DIR$/Buoi7/Bai3_7/Bai3_7.iml" />
       <module fileurl="file://$PROJECT_DIR$/Buoi6/Bai4/Bai4.iml" filepath="$PROJECT_DIR$/Buoi6/Bai4/Bai4.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Buoi7/Bai4_7/Bai4_7.iml" filepath="$PROJECT_DIR$/Buoi7/Bai4_7/Bai4_7.iml" />
       <module fileurl="file://$PROJECT_DIR$/Buoi6/Bai5/Bai5.iml" filepath="$PROJECT_DIR$/Buoi6/Bai5/Bai5.iml" />
-      <module fileurl="file://$PROJECT_DIR$/Buoi6/Bai6/Bai6.iml" filepath="$PROJECT_DIR$/Buoi6/Bai6/Bai6.iml" />
-      <module fileurl="file://$PROJECT_DIR$/Buoi6/Buoi6.iml" filepath="$PROJECT_DIR$/Buoi6/Buoi6.iml" />
       <module fileurl="file://$PROJECT_DIR$/Buoi7/Buoi7.iml" filepath="$PROJECT_DIR$/Buoi7/Buoi7.iml" />
       <module fileurl="file://$PROJECT_DIR$/.idea/Module 2.iml" filepath="$PROJECT_DIR$/.idea/Module 2.iml" />
       <module fileurl="file://$PROJECT_DIR$/Buoi6/minitest/minitest.iml" filepath="$PROJECT_DIR$/Buoi6/minitest/minitest.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Buoi7/minitest4/minitest4.iml" filepath="$PROJECT_DIR$/Buoi7/minitest4/minitest4.iml" />
     </modules>
   </component>
 </project>
