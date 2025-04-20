@@ -173,7 +173,6 @@ public class Main {
 
     }
 
-
     public static void editMeat(MaterialManager manager) {
         Scanner scanner = new Scanner(System.in);
         int cost;
