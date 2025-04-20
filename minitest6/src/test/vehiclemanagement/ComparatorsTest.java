@@ -1,8 +1,9 @@
 package test.vehiclemanagement;
 
-import main.vehiclemanagement.*;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
+import vehiclemanagement.*;
+
 import java.util.Comparator;
 import static org.junit.jupiter.api.Assertions.*;
 

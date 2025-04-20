@@ -1,6 +1,6 @@
 package test.vehiclemanagement;
 
-import main.vehiclemanagement.Motorbike;
+import vehiclemanagement.Motorbike;
 import org.junit.jupiter.api.Test;
 import static org.junit.jupiter.api.Assertions.*;
 

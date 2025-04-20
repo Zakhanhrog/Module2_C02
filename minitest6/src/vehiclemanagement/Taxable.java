@@ -1,4 +1,4 @@
-package main.vehiclemanagement;
+package vehiclemanagement;
 
 public interface Taxable {
     double calculateTax();

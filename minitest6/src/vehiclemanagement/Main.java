@@ -1,13 +1,11 @@
+package vehiclemanagement;
 
-package main.vehiclemanagement;
-
-import java.util.InputMismatchException;
 import java.util.Scanner;
 
 public class Main {
 
-    private static VehicleManager manager = new VehicleManager();
-    private static Scanner scanner = new Scanner(System.in);
+    private static final VehicleManager manager = new VehicleManager();
+    private static final Scanner scanner = new Scanner(System.in);
 
     public static void main(String[] args) {
         int choice;
@@ -18,7 +16,7 @@ public class Main {
         } while (choice != 0);
 
         scanner.close();
-        System.out.println("Exiting application. Goodbye!");
+        System.out.println("\nExiting application. Goodbye!");
     }
 
     private static void displayMenu() {
@@ -38,13 +36,13 @@ public class Main {
 
     private static int getUserChoice() {
         int choice = -1;
-        try {
+        if (scanner.hasNextInt()) {
             choice = scanner.nextInt();
-        } catch (InputMismatchException e) {
-            System.out.println("Invalid input. Please enter a number between 0 and 8.");
-        } finally {
-            scanner.nextLine();
+        } else {
+            System.out.println("(!) Invalid input. Please enter a number.");
+            scanner.next();
         }
+        scanner.nextLine();
         return choice;
     }
 
@@ -52,17 +50,17 @@ public class Main {
         int value = -1;
         while (value < 0) {
             System.out.print(prompt);
-            try {
+            if (scanner.hasNextInt()) {
                 value = scanner.nextInt();
                 if (value < 0) {
-                    System.out.println("Value cannot be negative. Please try again.");
+                    System.out.println("(!) Value cannot be negative. Please try again.");
                 }
-            } catch (InputMismatchException e) {
-                System.out.println("Invalid input. Please enter a whole number.");
+            } else {
+                System.out.println("(!) Invalid input. Please enter a whole number.");
                 value = -1;
-            } finally {
-                scanner.nextLine();
+                scanner.next();
             }
+            scanner.nextLine();
         }
         return value;
     }
@@ -73,7 +71,7 @@ public class Main {
             System.out.print(prompt);
             input = scanner.nextLine();
             if (input.trim().isEmpty()) {
-                System.out.println("Input cannot be empty. Please try again.");
+                System.out.println("(!) Input cannot be empty. Please try again.");
             }
         }
         return input.trim();
@@ -109,32 +107,32 @@ public class Main {
                 break;
             default:
                 if (choice != -1) {
-                    System.out.println("Invalid choice. Please enter a number between 0 and 8.");
+                    System.out.println("(!) Invalid choice. Please enter a number between 0 and 8.");
                 }
                 break;
         }
         if (choice != 0) {
-            System.out.print("\nPress Enter to continue...");
+            System.out.print("\n-- Press Enter to continue... --");
             scanner.nextLine();
         }
     }
 
     private static void addVehicle() {
-        System.out.println("\n--- Add New Vehicle ---");
+        System.out.println("\n---> Add New Vehicle <---");
         int typeChoice = -1;
         while(typeChoice != 1 && typeChoice != 2) {
-            System.out.print("Enter vehicle type (1: Car, 2: Motorbike): ");
-            try {
+            System.out.print("Select vehicle type (1: Car, 2: Motorbike): ");
+            if (scanner.hasNextInt()) {
                 typeChoice = scanner.nextInt();
                 if (typeChoice != 1 && typeChoice != 2) {
-                    System.out.println("Invalid type. Please enter 1 or 2.");
+                    System.out.println("(!) Invalid type. Please enter 1 or 2.");
                 }
-            } catch (InputMismatchException e) {
-                System.out.println("Invalid input. Please enter 1 or 2.");
+            } else {
+                System.out.println("(!) Invalid input. Please enter 1 or 2.");
                 typeChoice = -1;
-            } finally {
-                scanner.nextLine();
+                scanner.next();
             }
+            scanner.nextLine();
         }
 
         String id = getNonEmptyStringInput("Enter ID: ");
@@ -153,7 +151,7 @@ public class Main {
     }
 
     private static void removeVehicle() {
-        System.out.println("\n--- Remove Vehicle ---");
+        System.out.println("\n---> Remove Vehicle <---");
         String idToRemove = getNonEmptyStringInput("Enter the ID of the vehicle to remove: ");
         manager.removeVehicle(idToRemove);
     }

@@ -1,4 +1,4 @@
-package main.vehiclemanagement;
+package vehiclemanagement;
 
 import java.util.Comparator;
 

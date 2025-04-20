@@ -1,9 +1,9 @@
 package test.vehiclemanagement;
 
-import main.vehiclemanagement.Car;
-import main.vehiclemanagement.Motorbike;
-import main.vehiclemanagement.Vehicle;
-import main.vehiclemanagement.VehicleManager;
+import vehiclemanagement.Car;
+import vehiclemanagement.Motorbike;
+import vehiclemanagement.Vehicle;
+import vehiclemanagement.VehicleManager;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
 import java.util.List;
